@@ -4,6 +4,7 @@
     {
         Attachment,
         Event,
+        Role,
         Stronghold
     }
 }

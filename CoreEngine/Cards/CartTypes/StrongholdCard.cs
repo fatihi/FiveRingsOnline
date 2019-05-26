@@ -1,6 +1,6 @@
 ﻿namespace CoreEngine.Cards.CartTypes
 {
-    public class StrongholdCard : Card
+    public abstract class StrongholdCard : Card
     {
         public int Honor { get; set; }
         public int InfluencePool { get; set; }
