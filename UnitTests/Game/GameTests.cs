@@ -23,7 +23,11 @@ namespace UnitTests.Game
                 Role = new SeekerOfVoidCard(),
                 Provinces = new List<ProvinceCard>
                 {
-                    new AncestralLandsCard()
+                    new AncestralLandsCard(),
+                    new ElementalFuryCard(),
+                    new FertileFieldsCard(),
+                    new KuroiMoriCard(),
+                    new MeditationsOnTheTaoCard()
                 }
             };
             var player2 = new Player
