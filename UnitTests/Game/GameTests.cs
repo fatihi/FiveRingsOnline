@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CoreEngine.Cards.CardsImpl;
 using CoreEngine.Game;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -11,10 +12,15 @@ namespace UnitTests.Game
         [TestMethod]
         public void GameState_Should_ReturnCurrentGameState()
         {
+            var player1 = new Player
+            {
+                Stronghold = new IsawaMoriSeidoCard()
+            };
+            var player2 = new Player();
             var players = new List<Player>
             {
-                new Player(),
-                new Player()
+                player1,
+                player2
             };
 
             var game = new CoreEngine.Game.Game(players);
