@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTests.Cards
 {
     [TestClass]
-    class CardTests
+    public class CardTests
     {
         [TestMethod]
         public void OnCreate_ShouldNot_ChangeState()

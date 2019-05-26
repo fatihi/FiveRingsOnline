@@ -2,7 +2,7 @@
 
 namespace CoreEngine.Utils
 {
-    internal class StringUtils
+    public class StringUtils
     {
         public static string GetCardNameFromId(string id)
         {
