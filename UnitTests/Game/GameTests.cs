@@ -21,7 +21,10 @@ namespace UnitTests.Game
                 Id = player1Id,
                 Stronghold = new IsawaMoriSeidoCard(),
                 Role = new SeekerOfVoidCard(),
-                Provinces = new List<ProvinceCard>()
+                Provinces = new List<ProvinceCard>
+                {
+                    new AncestralLandsCard()
+                }
             };
             var player2 = new Player
             {

@@ -5,6 +5,7 @@
         Attachment,
         Event,
         Role,
+        Province,
         Stronghold
     }
 }
