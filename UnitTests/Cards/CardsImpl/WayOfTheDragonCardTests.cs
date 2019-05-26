@@ -16,6 +16,7 @@ namespace UnitTests.Cards.CardsImpl
             var card = instantiator.CreateCard("way-of-the-dragon") as AttachmentCard;
 
             card.Should().NotBeNull();
+            card.Name.Should().Be("Way of the Dragon");
             card.Cost.Should().Be(2);
             card.Type.Should().Be(CardType.Attachment);
             card.MilitaryBonus.Should().Be(1);

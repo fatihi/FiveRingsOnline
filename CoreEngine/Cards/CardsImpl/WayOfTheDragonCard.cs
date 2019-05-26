@@ -6,6 +6,7 @@ namespace CoreEngine.Cards.CardsImpl
     {
         public WayOfTheDragonCard()
         {
+            Name = "Way of the Dragon";
             Cost = 2;
             MilitaryBonus = 1;
             PoliticalBonus = 1;

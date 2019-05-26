@@ -18,6 +18,7 @@ namespace UnitTests.Cards.CardsImpl
             var card = instantiator.CreateCard("way-of-the-phoenix") as EventCard;
 
             card.Should().NotBeNull();
+            card.Name.Should().Be("Way of the Phoenix");
             card.Cost.Should().Be(0);
             card.Type.Should().Be(CardType.Event);
         }

@@ -7,6 +7,7 @@ namespace CoreEngine.Cards.CardsImpl
     {
         public WayOfThePhoenixCard()
         {
+            Name = "Way of the Phoenix";
             Cost = 0;
             Actions = new List<Action>
             {

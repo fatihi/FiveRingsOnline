@@ -13,6 +13,8 @@ namespace CoreEngine.Cards
 
         public CardType Type { get; set; }
 
+        public string Name { get; set; }
+
         public IEnumerable<Action> Actions { get; set; }
 
         public void OnCreate(GameState gameState) { }
