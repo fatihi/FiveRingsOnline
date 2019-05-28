@@ -8,6 +8,8 @@
         public Clan Clan { get; set; }
         public int Glory { get; set; }
 
+        public int? InfluenceCost { get; set; }
+
         public override CardType Type => CardType.Character;
     }
 }

@@ -2,6 +2,8 @@
 {
     public enum Trait
     {
-        Condition
+        Bushi,
+        Condition,
+        Shinobi
     }
 }
