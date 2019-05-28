@@ -5,6 +5,7 @@
         public int? Cost { get; set; }
         public int? MilitaryBonus { get; set; }
         public int? PoliticalBonus { get; set; }
+        public Clan Clan { get; set; }
 
         public override CardType Type => CardType.Attachment;
     }
