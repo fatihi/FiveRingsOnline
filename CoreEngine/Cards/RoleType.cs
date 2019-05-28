@@ -1,4 +1,4 @@
-﻿namespace CoreEngine.Cards.CartTypes
+﻿namespace CoreEngine.Cards
 {
     public enum RoleType
     {

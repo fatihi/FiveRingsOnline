@@ -8,7 +8,7 @@ namespace CoreEngine.Cards.CardsImpl
         {
             Name = "Seeker of Void";
             RoleType = RoleType.Seeker;
-            Element = CartTypes.Element.Void;
+            Element = Cards.Element.Void;
         }
     }
 }
