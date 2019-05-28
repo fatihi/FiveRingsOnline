@@ -17,11 +17,27 @@ namespace UnitTests.Cards.CardsImpl
 
             card.Should().NotBeNull();
             card.Name.Should().Be("Above Question");
-            card.Type.Should().Be(CardType.Attachment);
+            card.Clan.Should().Be(Clan.Crane);
             card.Cost.Should().Be(1);
             card.MilitaryBonus.Should().Be(0);
             card.PoliticalBonus.Should().Be(0);
-            card.Clan.Should().Be(Clan.Crane);
+            card.Text.Should().Be("Attached character cannot be chosen as a target of an opponent's event.");
+            card.Traits.Should().HaveCount(1);
+            card.Traits.Should().Contain(Trait.Condition);
+            card.IsUnique.Should().BeFalse();
+            card.Type.Should().Be(CardType.Attachment);
+            card.AllowedClans.Should().HaveCount(7);
+            card.AllowedClans.Should().Contain(Clan.Crab);
+            card.AllowedClans.Should().Contain(Clan.Crane);
+            card.AllowedClans.Should().Contain(Clan.Dragon);
+            card.AllowedClans.Should().Contain(Clan.Lion);
+            card.AllowedClans.Should().Contain(Clan.Phoenix);
+            card.AllowedClans.Should().Contain(Clan.Scorpion);
+            card.AllowedClans.Should().Contain(Clan.Unicorn);
+            card.DeckLimit.Should().Be(3);
+            card.InfluenceCost.Should().Be(2);
+            card.IsRestricted.Should().BeFalse();
+            card.Side.Should().Be(Side.Conflict);
         }
     }
 }

@@ -7,13 +7,19 @@ namespace CoreEngine.Cards
 {
     public class Card
     {
-        public string CardId { get; set; }
-
         public Guid Id { get; set; }
 
-        public virtual CardType Type { get; set; }
-
+        public string CardId { get; set; }
         public string Name { get; set; }
+        public virtual CardType Type { get; set; }
+        public string Text { get; set; }
+        public bool IsUnique { get; set; }
+        public IEnumerable<Trait> Traits { get; set; }
+
+        public IEnumerable<Clan> AllowedClans { get; set; }
+        public int DeckLimit { get; set; }
+        public bool IsRestricted { get; set; }
+        public Side Side { get; set; }
 
         public IEnumerable<Action> Actions { get; set; }
 
