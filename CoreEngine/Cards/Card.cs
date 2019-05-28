@@ -16,6 +16,8 @@ namespace CoreEngine.Cards
         public bool IsUnique { get; set; }
         public IEnumerable<Trait> Traits { get; set; }
 
+        public Uri ImageUrl { get; set; }
+
         public IEnumerable<Clan> AllowedClans { get; set; }
         public int DeckLimit { get; set; }
         public bool IsRestricted { get; set; }

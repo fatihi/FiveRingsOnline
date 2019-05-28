@@ -1,4 +1,5 @@
-﻿using CoreEngine.Cards.CartTypes;
+﻿using System;
+using CoreEngine.Cards.CartTypes;
 
 namespace CoreEngine.Cards.CardsImpl
 {
@@ -14,6 +15,7 @@ namespace CoreEngine.Cards.CardsImpl
             Text = "Attached character cannot be chosen as a target of an opponent's event.";
             Traits = new[] { Trait.Condition };
             IsUnique = false;
+            ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_141.jpg");
             AllowedClans = new[]
             {
                 Clan.Crab,

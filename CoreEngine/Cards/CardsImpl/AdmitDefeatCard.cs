@@ -1,4 +1,5 @@
-﻿using CoreEngine.Cards.CartTypes;
+﻿using System;
+using CoreEngine.Cards.CartTypes;
 
 namespace CoreEngine.Cards.CardsImpl
 {
@@ -12,6 +13,7 @@ namespace CoreEngine.Cards.CardsImpl
             Text = "<b>Action:</b> Choose a character that is defending alone – bow that character.";
             Traits = new Trait[0];
             IsUnique = false;
+            ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_147.jpg");
             AllowedClans = new[]
             {
                 Clan.Crab,

@@ -26,6 +26,7 @@ namespace UnitTests.Cards.CardsImpl
             card.Traits.Should().Contain(Trait.Condition);
             card.IsUnique.Should().BeFalse();
             card.Type.Should().Be(CardType.Attachment);
+            card.ImageUrl.Should().Be("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_141.jpg");
             card.AllowedClans.Should().HaveCount(7);
             card.AllowedClans.Should().Contain(Clan.Crab);
             card.AllowedClans.Should().Contain(Clan.Crane);

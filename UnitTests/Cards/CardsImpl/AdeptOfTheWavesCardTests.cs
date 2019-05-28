@@ -28,6 +28,7 @@ namespace UnitTests.Cards.CardsImpl
             card.Traits.Should().Contain(Trait.Water);
             card.IsUnique.Should().BeFalse();
             card.Type.Should().Be(CardType.Character);
+            card.ImageUrl.Should().Be("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_84.jpg");
             card.AllowedClans.Should().HaveCount(1);
             card.AllowedClans.Should().Contain(Clan.Phoenix);
             card.DeckLimit.Should().Be(3);

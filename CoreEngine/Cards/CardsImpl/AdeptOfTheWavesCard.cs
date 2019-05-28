@@ -1,4 +1,5 @@
-﻿using CoreEngine.Cards.CartTypes;
+﻿using System;
+using CoreEngine.Cards.CartTypes;
 
 namespace CoreEngine.Cards.CardsImpl
 {
@@ -19,6 +20,7 @@ namespace CoreEngine.Cards.CardsImpl
                 Trait.Water
             };
             IsUnique = false;
+            ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_84.jpg");
             AllowedClans = new[] { Clan.Phoenix };
             DeckLimit = 3;
             InfluenceCost = null;

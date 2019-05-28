@@ -23,6 +23,7 @@ namespace UnitTests.Cards.CardsImpl
             card.Traits.Should().HaveCount(0);
             card.IsUnique.Should().BeFalse();
             card.Type.Should().Be(CardType.Event);
+            card.ImageUrl.Should().Be("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_147.jpg");
             card.AllowedClans.Should().HaveCount(7);
             card.AllowedClans.Should().Contain(Clan.Crab);
             card.AllowedClans.Should().Contain(Clan.Crane);
