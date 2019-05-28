@@ -4,6 +4,8 @@
     {
         Bushi,
         Condition,
-        Shinobi
+        Shinobi,
+        Shugenja,
+        Water
     }
 }
