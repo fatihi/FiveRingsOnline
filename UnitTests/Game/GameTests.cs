@@ -14,38 +14,55 @@ namespace UnitTests.Game
         [TestMethod]
         public void GameState_Should_ReturnCurrentGameState()
         {
-            var player1Id = System.Guid.NewGuid();
-            var player2Id = System.Guid.NewGuid();
-            var player1 = new Player
-            {
-                Id = player1Id,
-                Stronghold = new IsawaMoriSeidoCard(),
-                Role = new SeekerOfVoidCard(),
-                Provinces = new List<ProvinceCard>
-                {
-                    new AncestralLandsCard(),
-                    new ElementalFuryCard(),
-                    new FertileFieldsCard(),
-                    new KuroiMoriCard(),
-                    new MeditationsOnTheTaoCard()
-                }
-            };
-            var player2 = new Player
-            {
-                Id = player2Id,
-                Stronghold = new IsawaMoriSeidoCard()
-            };
+            var firstPlayerId = System.Guid.NewGuid();
+            var firstPlayerStronghold = new IsawaMoriSeidoCard();
             var players = new List<Player>
             {
-                player1,
-                player2
+                new Player
+                {
+                    Id = firstPlayerId,
+                    Stronghold = firstPlayerStronghold,
+                    Role = new SeekerOfVoidCard(),
+                    Provinces = new List<Province>
+                    {
+                        new Province
+                        {
+                            ProvinceCard = new AncestralLandsCard(),
+                            ContainedCard = firstPlayerStronghold
+                        },
+                        new Province
+                        {
+                            ProvinceCard = new ElementalFuryCard(),
+                            ContainedCard = new MiyaMysticCard()
+                        },
+                        new Province
+                        {
+                            ProvinceCard = new FertileFieldsCard(),
+                            ContainedCard = new MiyaMysticCard()
+                        },
+                        new Province
+                        {
+                            ProvinceCard = new KuroiMoriCard(),
+                            ContainedCard = new MiyaMysticCard()
+                        },
+                        new Province()
+                        {
+                            ProvinceCard = new MeditationsOnTheTaoCard(),
+                            ContainedCard = new MiyaMysticCard()
+                        }
+                    }
+                },
+                new Player()
             };
 
             var game = new CoreEngine.Game.Game(players);
 
             var gameState = game.GameState;
             gameState.Players.Should().HaveCount(2);
-            gameState.Players.First(x => x.Id == player1Id).Stronghold.Should().BeOfType<IsawaMoriSeidoCard>();
+            var firstPlayer = gameState.Players.First(x => x.Id == firstPlayerId);
+            firstPlayer.Stronghold.Should().BeOfType<IsawaMoriSeidoCard>();
+            firstPlayer.Provinces.Should().HaveCount(5);
+            firstPlayer.Provinces.Where(x => x.IsStrongholdProvince).Should().HaveCount(1);
         }
     }
 }

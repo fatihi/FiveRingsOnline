@@ -11,7 +11,7 @@ namespace CoreEngine.Cards
 
         public Guid Id { get; set; }
 
-        public CardType Type { get; set; }
+        public virtual CardType Type { get; set; }
 
         public string Name { get; set; }
 

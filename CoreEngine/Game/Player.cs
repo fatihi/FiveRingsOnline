@@ -9,6 +9,6 @@ namespace CoreEngine.Game
         public Guid Id { get; set; }
         public StrongholdCard Stronghold { get; set; }
         public RoleCard Role { get; set; }
-        public IEnumerable<ProvinceCard> Provinces { get; set; }
+        public IEnumerable<Province> Provinces { get; set; }
     }
 }

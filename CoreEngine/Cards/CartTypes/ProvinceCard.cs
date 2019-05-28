@@ -5,6 +5,6 @@
         public Element Element { get; set; }
         public int Strength { get; set; }
 
-        public new CardType Type => CardType.Province;
+        public override CardType Type => CardType.Province;
     }
 }

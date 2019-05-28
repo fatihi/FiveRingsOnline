@@ -7,6 +7,6 @@
         public int Fate { get; set; }
         public int StrengthBonus { get; set; }
 
-        public new CardType Type => CardType.Stronghold;
+        public override CardType Type => CardType.Stronghold;
     }
 }

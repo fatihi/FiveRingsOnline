@@ -4,6 +4,6 @@
     {
         public int? Cost { get; set; }
 
-        public new CardType Type => CardType.Event;
+        public override CardType Type => CardType.Event;
     }
 }

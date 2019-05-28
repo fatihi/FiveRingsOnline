@@ -6,6 +6,7 @@
         Crane,
         Dragon,
         Lion,
+        Neutral,
         Phoenix,
         Scorpion,
         Unicorn

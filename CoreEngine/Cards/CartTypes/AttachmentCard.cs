@@ -6,6 +6,6 @@
         public int? MilitaryBonus { get; set; }
         public int? PoliticalBonus { get; set; }
 
-        public new CardType Type => CardType.Attachment;
+        public override CardType Type => CardType.Attachment;
     }
 }
