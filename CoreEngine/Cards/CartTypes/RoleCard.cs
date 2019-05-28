@@ -6,6 +6,6 @@
         public Element? Element { get; set; }
         public Clan? Clan { get; set; }
 
-        public CardType Type => CardType.Role;
+        public override CardType Type => CardType.Role;
     }
 }
