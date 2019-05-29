@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using CoreEngine.Cards.CartTypes;
 using CoreEngine.Game;
 
 namespace CoreEngine.Cards
@@ -15,6 +14,7 @@ namespace CoreEngine.Cards
         public string Text { get; set; }
         public bool IsUnique { get; set; }
         public IEnumerable<Trait> Traits { get; set; }
+        public IEnumerable<Keyword> Keywords { get; set; }
 
         public Uri ImageUrl { get; set; }
 

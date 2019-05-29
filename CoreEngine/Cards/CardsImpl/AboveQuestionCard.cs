@@ -14,6 +14,7 @@ namespace CoreEngine.Cards.CardsImpl
             PoliticalBonus = 0;
             Text = "Attached character cannot be chosen as a target of an opponent's event.";
             Traits = new[] { Trait.Condition };
+            Keywords = new Keyword[0];
             IsUnique = false;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_141.jpg");
             AllowedClans = new[]

@@ -12,6 +12,7 @@ namespace CoreEngine.Cards.CardsImpl
             Cost = 1;
             Text = "<b>Action:</b> Choose a character that is defending alone – bow that character.";
             Traits = new Trait[0];
+            Keywords = new Keyword[0];
             IsUnique = false;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_147.jpg");
             AllowedClans = new[]

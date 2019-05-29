@@ -19,6 +19,7 @@ namespace CoreEngine.Cards.CardsImpl
                 Trait.Shugenja,
                 Trait.Fire
             };
+            Keywords = new Keyword[0];
             IsUnique = false;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_56.jpg");
             AllowedClans = new[]

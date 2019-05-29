@@ -18,6 +18,7 @@ namespace CoreEngine.Cards.CardsImpl
             {
                 Trait.Bushi
             };
+            Keywords = new[] { Keyword.Pride };
             IsUnique = false;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_71.jpg");
             AllowedClans = new[]

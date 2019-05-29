@@ -16,6 +16,7 @@ namespace CoreEngine.Cards.CardsImpl
                 Trait.Spell,
                 Trait.Water
             };
+            Keywords = new Keyword[0];
             IsUnique = false;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_177.jpg");
             AllowedClans = new[]

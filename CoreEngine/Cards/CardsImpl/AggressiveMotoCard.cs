@@ -19,6 +19,7 @@ namespace CoreEngine.Cards.CardsImpl
                 Trait.Bushi,
                 Trait.Cavalry
             };
+            Keywords = new Keyword[0];
             IsUnique = false;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_111.jpg");
             AllowedClans = new[]
