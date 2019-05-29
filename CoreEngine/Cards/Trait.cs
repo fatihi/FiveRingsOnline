@@ -3,6 +3,7 @@
     public enum Trait
     {
         Bushi,
+        Cavalry,
         Condition,
         Fire,
         Shinobi,
