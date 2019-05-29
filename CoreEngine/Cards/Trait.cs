@@ -6,6 +6,7 @@
         Condition,
         Shinobi,
         Shugenja,
+        Spell,
         Water
     }
 }

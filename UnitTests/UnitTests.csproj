@@ -19,4 +19,8 @@
     <ProjectReference Include="..\CoreEngine\CoreEngine.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Cards\CardsImpl\" />
+  </ItemGroup>
+
 </Project>
