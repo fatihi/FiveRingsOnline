@@ -4,6 +4,7 @@
     {
         Bushi,
         Condition,
+        Fire,
         Shinobi,
         Shugenja,
         Spell,
