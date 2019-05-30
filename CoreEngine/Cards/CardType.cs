@@ -5,6 +5,7 @@
         Attachment,
         Character,
         Event,
+        Holding,
         Role,
         Province,
         Stronghold
