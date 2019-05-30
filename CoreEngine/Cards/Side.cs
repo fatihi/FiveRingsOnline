@@ -3,6 +3,7 @@
     public enum Side
     {
         Conflict,
-        Dynasty
+        Dynasty,
+        Province
     }
 }
