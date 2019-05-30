@@ -4,6 +4,7 @@
     {
         Conflict,
         Dynasty,
-        Province
+        Province,
+        Role
     }
 }
