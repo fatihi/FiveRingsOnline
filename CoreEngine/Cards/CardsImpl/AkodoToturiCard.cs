@@ -19,7 +19,7 @@ namespace CoreEngine.Cards.CardsImpl
                 Trait.Bushi,
                 Trait.Champion
             };
-            Keywords = new[] { Keyword.Pride };
+            Keywords = new Keyword[0];
             IsUnique = true;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_79.jpg");
             AllowedClans = new[]
