@@ -11,7 +11,7 @@ namespace CoreEngine.Cards.CardsImpl
             RoleType = RoleType.Seeker;
             Element = Cards.Element.Void;
             Clan = Clan.Neutral;
-            Text = "You may replace 1 province of any element with an additional [element-void] province while deckbuilding.\\n<b>Reaction:</b> After a [element-void] province you control is revealed – gain 1 fate.";
+            Text = "You may replace 1 province of any element with an additional [element-void] province while deckbuilding.\n<b>Reaction:</b> After a [element-void] province you control is revealed – gain 1 fate.";
             Traits = new[]
             {
                 Trait.Seeker,

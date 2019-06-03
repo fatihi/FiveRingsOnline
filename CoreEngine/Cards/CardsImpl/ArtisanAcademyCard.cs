@@ -15,10 +15,7 @@ namespace CoreEngine.Cards.CardsImpl
             Keywords = new Keyword[0];
             IsUnique = false;
             ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_53.jpg");
-            AllowedClans = new[]
-            {
-                Clan.Crane
-            };
+            AllowedClans = new[] { Clan.Crane };
             DeckLimit = 3;
             IsRestricted = false;
             Side = Side.Dynasty;

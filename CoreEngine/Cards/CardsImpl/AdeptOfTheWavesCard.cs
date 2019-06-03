@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using CoreEngine.Cards.CartTypes;
 
 namespace CoreEngine.Cards.CardsImpl

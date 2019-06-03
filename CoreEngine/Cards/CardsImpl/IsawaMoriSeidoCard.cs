@@ -14,17 +14,11 @@ namespace CoreEngine.Cards.CardsImpl
             InfluencePool = 10;
             StrengthBonus = 2;
             Text = "<b>Action:</b> Bow this stronghold, choose a character – that character gets +2 glory until the end of the phase.";
-            Traits = new[]
-            {
-                Trait.Shrine
-            };
+            Traits = new[] { Trait.Shrine };
             Keywords = new Keyword[0];
             IsUnique = true;
-            ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_79.jpg");
-            AllowedClans = new[]
-            {
-                Clan.Phoenix
-            };
+            ImageUrl = new Uri("http://lcg-cdn.fantasyflightgames.com/l5r/L5C01_5.jpg");
+            AllowedClans = new[] { Clan.Phoenix };
             DeckLimit = 1;
             IsRestricted = false;
             Side = Side.Province;
