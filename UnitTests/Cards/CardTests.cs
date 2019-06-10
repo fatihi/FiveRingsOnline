@@ -1,13 +1,12 @@
 ﻿using CoreEngine.Cards;
 using CoreEngine.Game;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UnitTests.Cards
 {
-    [TestClass]
     public class CardTests
     {
-        [TestMethod]
+        [Test]
         public void OnCreate_ShouldNot_ChangeState()
         {
             var gameState = new GameState();

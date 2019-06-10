@@ -1,17 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using CoreEngine.Cards.CardsImpl;
-using CoreEngine.Cards.CartTypes;
 using CoreEngine.Game;
 using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UnitTests.Game
 {
-    [TestClass]
     public class GameTests
     {
-        [TestMethod]
+        [Test]
         public void GameState_Should_ReturnCurrentGameState()
         {
             var firstPlayerId = System.Guid.NewGuid();

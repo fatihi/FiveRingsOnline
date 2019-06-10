@@ -1,14 +1,13 @@
 ﻿using CoreEngine.Cards;
 using CoreEngine.Cards.CardsImpl;
 using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UnitTests.Cards
 {
-    [TestClass]
     public class CardInstantiatorTests
     {
-        [TestMethod]
+        [Test]
         public void CreateCard_Should_CreateInstanceOfCard_When_GivenId()
         {
             const string cardId = "way-of-the-phoenix";
@@ -20,7 +19,7 @@ namespace UnitTests.Cards
             card.CardId.Should().Be(cardId);
         }
 
-        [TestMethod]
+        [Test]
         public void CreateCard_Should_CreateInstanceOfCard_When_GivenDifferentId()
         {
             const string cardId = "way-of-the-dragon";
