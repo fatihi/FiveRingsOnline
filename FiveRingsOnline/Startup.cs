@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using FiveRingsOnline.Hubs;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
@@ -44,6 +45,12 @@ namespace FiveRingsOnline
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
+            });
+
+            app.UseSignalR(options =>
+            {
+                options.MapHub<ChatHub>("/chat");
+                options.MapHub<GameHub>("/game");
             });
             
             app.UseSpa(spa =>
