@@ -7,7 +7,7 @@ namespace CoreEngine.Cards
     {
         public Card CreateCard(string cardId)
         {
-            var cardName = StringUtils.GetCardNameFromId(cardId);
+            var cardName = StringUtils.GetCardNameFromCardId(cardId);
             var type = Type.GetType("CoreEngine.Cards.CardsImpl." + cardName);
             var card = (Card) Activator.CreateInstance(type);
             card.CardId = cardId;

@@ -10,7 +10,7 @@ namespace UnitTests.Utils
         [TestCase("way-of-the-phoenix", "WayOfThePhoenixCard")]
         public void GetCardNameFromId_Should_GenerateNameFromId(string cardId, string expectedName)
         {
-            var cardName = StringUtils.GetCardNameFromId(cardId);
+            var cardName = StringUtils.GetCardNameFromCardId(cardId);
             
             cardName.Should().Be(expectedName);
         }
