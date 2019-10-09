@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreEngine", "CoreEngine\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{9D7EE137-74C8-4443-B6B6-F65DA998E468}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveRingsOnline", "FiveRingsOnline\FiveRingsOnline.csproj", "{F6507A6F-F776-43CD-A8D1-B297DF0BDE97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiveRingsOnline", "FiveRingsOnline\FiveRingsOnline.csproj", "{F6507A6F-F776-43CD-A8D1-B297DF0BDE97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
